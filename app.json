@@ -1,0 +1,54 @@
+{
+    "name": "Brighton Main Streets",
+    "version": "0.0.1",
+    "description": "Brighton Main Streets VTO",
+    "repository": "https://github.com/donaldrivard/Brighton-Main-Streets",
+    "author": "Don Rivard",
+    "license": "ALv2",
+    "bugs": {
+      "url": "https://github.com/donaldrivard/Brighton-Main-Streets/issues"
+    },
+    "homepage":
+      "https://github.com/donaldrivard/Brighton-Main-Streets#readme",
+    "dependencies": {},
+    "devDependencies": {},
+    "buildpacks": [
+      {
+        "url": "https://github.com/heroku/salesforce-cli-buildpack#v3"
+      },
+      {
+        "url": "https://github.com/heroku/salesforce-buildpack#v1"
+      }
+    ],
+    "env": {
+      "SFDX_DEV_HUB_AUTH_URL": {
+        "required": true
+      },
+      "SFDX_BUILDPACK_DEBUG": {
+        "required": true
+      },
+      "HEROKU_APP_NAME" : {
+        "required": true
+      }
+    },
+    "environments": {
+      "test": {
+        "scripts": {
+          "test-setup":
+            "./vendor/sfdx/release.sh ci-$HEROKU_TEST_RUN_COMMIT_VERSION && ./bin/test-setup.sh",
+          "test": "./bin/test.sh"
+        },
+        "formation": {
+          "test": {
+            "quantity": 1,
+            "size": "standard-1x"
+          }
+        }
+      }
+    },
+    "scripts": {
+      "postdeploy": "./installNPSP.sh",
+      "pr-predestroy": "./bin/ra-org-delete.sh"
+    }
+  }
+  
