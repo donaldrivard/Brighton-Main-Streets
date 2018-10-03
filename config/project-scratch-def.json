@@ -1,8 +1,8 @@
 {
     "orgName": "Brighton Main Streets",
     "edition": "Developer",
-    "features": ["ExpandedSourceTracking","API","AuthorApex","Communities","CustomerSelfService","DebugApex"],
+    "features": ["ExpandedSourceTracking","API","AuthorApex","DebugApex"],
     "orgPreferences" : {
-        "enabled": ["S1DesktopEnabled","NetworksEnabled"]
+        "enabled": ["S1DesktopEnabled"]
     }
 }
