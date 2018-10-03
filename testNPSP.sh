@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 echo 'Installing Package 2: Households...'
 sfdx force:package:install -i 04t80000000y8tyAAA -w 100
 if [ "$?" = "0" ]; then
