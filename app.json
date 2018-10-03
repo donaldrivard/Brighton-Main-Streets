@@ -47,7 +47,7 @@
       }
     },
     "scripts": {
-      "postdeploy": "./installNPSP.sh",
+      "postdeploy": "./testNPSP.sh",
       "pr-predestroy": "./bin/ra-org-delete.sh"
     }
   }
