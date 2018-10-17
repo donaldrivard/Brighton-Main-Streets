@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Zone__c</fullName>
+    <description>All businesses inside the district have a zone, those outside do not</description>
+    <externalId>false</externalId>
+    <inlineHelpText>All businesses inside the district have a zone, those outside do not</inlineHelpText>
+    <label>Zone</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Zone</valueSetName>
+    </valueSet>
+</CustomField>
