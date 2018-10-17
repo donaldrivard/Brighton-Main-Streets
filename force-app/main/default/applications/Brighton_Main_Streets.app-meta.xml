@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#0070D2</headerColor>
+        <logo>BMSlogo</logo>
+        <logoVersion>1</logoVersion>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <description>Brighton Main Streets</description>
+    <formFactors>Large</formFactors>
+    <label>Brighton Main Streets</label>
+    <navType>Standard</navType>
+    <tabs>standard-home</tabs>
+    <tabs>Location_Data</tabs>
+    <tabs>Parcel__c</tabs>
+    <tabs>Storefront__c</tabs>
+    <tabs>standard-Account</tabs>
+    <tabs>standard-Contact</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>Brighton_Main_Streets_UtilityBar</utilityBar>
+</CustomApplication>
