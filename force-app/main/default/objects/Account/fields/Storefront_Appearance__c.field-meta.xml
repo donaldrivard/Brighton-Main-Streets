@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Storefront_Appearance__c</fullName>
+    <description>Storefront Appearance?</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Storefront Appearance?</inlineHelpText>
+    <label>Storefront Appearance?</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Appearance</valueSetName>
+    </valueSet>
+</CustomField>
